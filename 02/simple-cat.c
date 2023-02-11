@@ -43,7 +43,7 @@ main(int argc, char **argv) {
 	while ((n = read(STDIN_FILENO, buf, BUFFSIZE)) > 0) {
 		if (write(STDOUT_FILENO, buf, n) != n) {
 			fprintf(stderr, "Unable to write: %s\n",
-strerror(errno));
+            strerror(errno));
 			exit(EXIT_FAILURE);
 		}
 	}

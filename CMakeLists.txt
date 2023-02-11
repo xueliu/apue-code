@@ -18,5 +18,11 @@ find_package(Threads REQUIRED)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
+# -- Add globally compile options
+add_compile_options(-Wall -Wextra -pedantic -Werror)
+
 # -- Add Chapter 1
 add_subdirectory(01)
+
+# -- Add Chapter 2
+add_subdirectory(02)
